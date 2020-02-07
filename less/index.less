@@ -23,6 +23,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	font-family: 'Raleway', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -54,6 +55,234 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	background: url(/css/assets/forest.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 }
 
+.layout {
+
+}
+
+.bg {
+	background: #002C41; 
+	// #1E2D34
+	color: white;
+}
+
+.content-title {
+	margin: 0 0 25px 0;
+	font-weight: lighter;
+	font-size: 25px;
+}
+
+.spacing {
+	line-height: normal;
+	letter-spacing: normal;
+}
+
+.container {
+	width: 800px;
+	margin: 50px auto;
+	
+	header {
+
+		nav {
+			display: flex;
+			justify-content: flex-end;
+			margin-bottom: 25px;
+			a {
+				text-decoration: underline;
+				color: black;
+				margin: 5px;
+			}
+			a:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.content.top {
+	background: white;
+	padding: 20px;
+	h1 {
+		font-size: 50px;
+		font-weight: bold;
+		margin: 25px 0 0 0;
+	}
+	h2 {
+		font-weight: bold;
+		font-size: 15px;
+		margin: 25px 0 0 0;
+		color: #53C300;
+	}
+}
+
+img {
+	width:12em;
+	// height:13em;
+}
+
+.content.middle {
+	// padding: 20px;
+	.bg ();
+	display: flex;
+	.info2, .info3 {
+		width: 50%;
+		margin: 15px;
+		h2 {
+			.content-title();
+			.spacing();
+		}
+		p {
+			.spacing();
+		}
+	}
+	table, td, th {
+		border: 1px solid white;
+		padding: 15px;
+		text-align: center;
+		line-height: normal;
+		width: 100%;
+	}
+}
+
+.content.bottom {
+	.bg ();
+	padding-bottom: 50px;
+	// display: flex;
+	// flex-direction: column;
+	.info4 {
+		width: 50%;
+		margin: 0 15px 15px 15px;
+		h2 {
+			.content-title();
+		}
+		table, td, th {
+			border: 1px solid white;
+			padding: 15px;
+			text-align: center;
+			line-height: normal;
+		}
+	}
+}
+
+footer {
+	background: white;
+	color: black;
+	text-align: center;
+	margin: 25px 0 0 0 ;
+	padding: 5%;
+	a {
+		text-decoration: none;
+	}
+	a:hover {
+		color: #53C300;
+	}
+	a:visited {
+		color: #53C300;
+	}
+	line-height: normal;
+	letter-spacing: normal;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+	.container {
+		max-width: 768px;
+		nav {
+			display: flex;
+			justify-content: flex-start;
+		}
+	}
+	.content.middle {
+		display: flex;
+		flex-direction: column;
+		.info2, .info3 {
+			width: auto;
+			margin: 15px;
+			padding: 10px;
+		}
+		table {
+			width: 50%;
+		}
+	}
+
+	.content.bottom {
+		.info4 {
+			width: auto;
+			padding: 10px;
+		}
+	}
+
+	footer {
+		max-width: 768px;
+	}
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+	.container {
+		margin-top: 0;
+		max-width: 400px;
+		header {
+			nav {
+				.bg ();
+				display: flex;
+				flex-direction: column;
+				// text-align: center;
+				margin-bottom: 0;
+				a {
+					color: white;
+					text-align: center;
+					text-decoration: none;
+					border-bottom: 1px solid white;
+					padding: 15px 0 15px 0;
+					margin-bottom: -1px;
+				}
+				a:hover {
+					background: #00785E;
+					margin: 0;
+				}
+				a:visited {
+					color: white;
+				}
+			}
+		}
+	}
+
+	.content.top {
+		h1 {
+			font-size: 30px;
+			font-weight: bold;
+			margin: 25px 0 0 0;
+		}
+	}
+
+	.content.middle {
+		display: flex;
+		flex-direction: column;
+		.info2, .info3 {
+			width: 360px;
+			margin: 15px;
+			padding: 10px;
+			margin: 25px auto;
+		}
+		table {
+			width: 340px;
+		}
+	}
+
+	.content.bottom {
+		.info4 {
+			width: 360px;
+			margin: auto;
+			padding: 10px;
+		}
+	}
+	footer {
+		max-width: 400px;
+	}
+}

@@ -89,6 +89,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-family: 'Raleway', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -133,4 +134,213 @@ table {
 html,
 body {
   height: 100%;
+  background: url(/css/assets/forest.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.bg {
+  background: #002C41;
+  color: white;
+}
+.content-title {
+  margin: 0 0 25px 0;
+  font-weight: lighter;
+  font-size: 25px;
+}
+.spacing {
+  line-height: normal;
+  letter-spacing: normal;
+}
+.container {
+  width: 800px;
+  margin: 50px auto;
+}
+.container header nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 25px;
+}
+.container header nav a {
+  text-decoration: underline;
+  color: black;
+  margin: 5px;
+}
+.container header nav a:hover {
+  text-decoration: none;
+}
+.content.top {
+  background: white;
+  padding: 20px;
+}
+.content.top h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 25px 0 0 0;
+}
+.content.top h2 {
+  font-weight: bold;
+  font-size: 15px;
+  margin: 25px 0 0 0;
+  color: #53C300;
+}
+img {
+  width: 12em;
+}
+.content.middle {
+  background: #002C41;
+  color: white;
+  display: flex;
+}
+.content.middle .info2,
+.content.middle .info3 {
+  width: 50%;
+  margin: 15px;
+}
+.content.middle .info2 h2,
+.content.middle .info3 h2 {
+  margin: 0 0 25px 0;
+  font-weight: lighter;
+  font-size: 25px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.content.middle .info2 p,
+.content.middle .info3 p {
+  line-height: normal;
+  letter-spacing: normal;
+}
+.content.middle table,
+.content.middle td,
+.content.middle th {
+  border: 1px solid white;
+  padding: 15px;
+  text-align: center;
+  line-height: normal;
+  width: 100%;
+}
+.content.bottom {
+  background: #002C41;
+  color: white;
+  padding-bottom: 50px;
+}
+.content.bottom .info4 {
+  width: 50%;
+  margin: 0 15px 15px 15px;
+}
+.content.bottom .info4 h2 {
+  margin: 0 0 25px 0;
+  font-weight: lighter;
+  font-size: 25px;
+}
+.content.bottom .info4 table,
+.content.bottom .info4 td,
+.content.bottom .info4 th {
+  border: 1px solid white;
+  padding: 15px;
+  text-align: center;
+  line-height: normal;
+}
+footer {
+  background: white;
+  color: black;
+  text-align: center;
+  margin: 25px 0 0 0 ;
+  padding: 5%;
+  line-height: normal;
+  letter-spacing: normal;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:hover {
+  color: #53C300;
+}
+footer a:visited {
+  color: #53C300;
+}
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .container {
+    max-width: 768px;
+  }
+  .container nav {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .content.middle {
+    display: flex;
+    flex-direction: column;
+  }
+  .content.middle .info2,
+  .content.middle .info3 {
+    width: auto;
+    margin: 15px;
+    padding: 10px;
+  }
+  .content.middle table {
+    width: 50%;
+  }
+  .content.bottom .info4 {
+    width: auto;
+    padding: 10px;
+  }
+  footer {
+    max-width: 768px;
+  }
+}
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .container {
+    margin-top: 0;
+    max-width: 400px;
+  }
+  .container header nav {
+    background: #002C41;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .container header nav a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    padding: 15px 0 15px 0;
+    margin-bottom: -1px;
+  }
+  .container header nav a:hover {
+    background: #00785E;
+    margin: 0;
+  }
+  .container header nav a:visited {
+    color: white;
+  }
+  .content.top h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 25px 0 0 0;
+  }
+  .content.middle {
+    display: flex;
+    flex-direction: column;
+  }
+  .content.middle .info2,
+  .content.middle .info3 {
+    width: 360px;
+    margin: 15px;
+    padding: 10px;
+    margin: 25px auto;
+  }
+  .content.middle table {
+    width: 340px;
+  }
+  .content.bottom .info4 {
+    width: 360px;
+    margin: auto;
+    padding: 10px;
+  }
+  footer {
+    max-width: 400px;
+  }
 }
