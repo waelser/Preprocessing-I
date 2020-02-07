@@ -162,6 +162,11 @@ body {
   justify-content: flex-end;
   margin-bottom: 25px;
 }
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .container header nav {
+    justify-content: flex-start;
+  }
+}
 .container header nav a {
   text-decoration: underline;
   color: black;
@@ -264,7 +269,7 @@ footer a:visited {
   .container {
     max-width: 768px;
   }
-  .container nav {
+  .container header nav {
     display: flex;
     justify-content: flex-start;
   }

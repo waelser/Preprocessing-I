@@ -67,8 +67,10 @@ html, body {
 
 }
 
+@backgroundBlue: #002C41;
+
 .bg {
-	background: #002C41; 
+	background: @backgroundBlue; 
 	// #1E2D34
 	color: white;
 }
@@ -94,6 +96,10 @@ html, body {
 			display: flex;
 			justify-content: flex-end;
 			margin-bottom: 25px;
+
+				@media only screen and (max-width: 768px) and (min-width: 481px) {
+					justify-content: flex-start;
+				}
 			a {
 				text-decoration: underline;
 				color: black;
@@ -129,7 +135,7 @@ img {
 
 .content.middle {
 	// padding: 20px;
-	.bg ();
+	.bg();
 	display: flex;
 	.info2, .info3 {
 		width: 50%;
@@ -152,7 +158,7 @@ img {
 }
 
 .content.bottom {
-	.bg ();
+	.bg();
 	padding-bottom: 50px;
 	// display: flex;
 	// flex-direction: column;
@@ -193,9 +199,11 @@ footer {
 @media only screen and (max-width: 768px) and (min-width: 481px) {
 	.container {
 		max-width: 768px;
-		nav {
-			display: flex;
-			justify-content: flex-start;
+		header {
+			nav {
+				display: flex;
+				justify-content: flex-start;
+			}
 		}
 	}
 	.content.middle {
